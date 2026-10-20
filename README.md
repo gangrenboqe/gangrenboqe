@@ -4,7 +4,20 @@
 
 这是我做所有事情的一条标准。它不是口号 —— 下面每个项目都在证明它。
 
-最后更新：2026-10-14
+最后更新：2026-10-20
+
+## 如果你只有 2 分钟
+
+时间紧，按这个顺序看：
+
+1. **`lbm-probe`**（最新）— 一个 CFD（计算流体力学，Computational Fluid Dynamics）数值实验：
+   在普通 CPU 上复现圆柱绕流，与权威基准逐项对照，**Cd 与 St 最好档误差 0.06% / 0.02%**。
+   连我自己一度恒定测错的 7.6%，都被查回来写进了 README。**它证明我会用实测数据说话。**
+2. **`personal-ai`** — 主项目。跑在自己电脑上的 AI 入口：对话与待办全部存在本地，
+   模型供应商可替换，32/32 测试全过。
+3. **`pdf-delivery-audit`** — 最小但最直接。我所有交付标准的起点（就是上面那条标准的来历）。
+
+其余四个按需看：一个是同类型的研究项目（`three-body-trust-horizon`），三个是工具 / 能力件。
 
 ## 这条标准是怎么来的
 
@@ -19,16 +32,22 @@
 
 ## 我做了什么
 
-| 项目 | 解决的问题 |
-|---|---|
-| [personal-ai](https://github.com/gangrenboqe/personal-ai) | 跑在自己电脑上的 AI 入口：对话与待办全部存在本地，模型供应商可替换 |
-| [pdf-delivery-audit](https://github.com/gangrenboqe/pdf-delivery-audit) | 交付前的 PDF 体检：页数、文字层可提取性、关键字段，不合格就拦住 |
-| [delivery-observability-tools](https://github.com/gangrenboqe/delivery-observability-tools) | 出问题时先看清：调用观测、日志体检、Windows 机器巡检 |
-| [ai-capability-kit](https://github.com/gangrenboqe/ai-capability-kit) | AI 功能到底能不能用：工具调用、本地检索、提示词 A/B 评测 |
-| [ai-daily-collector](https://github.com/gangrenboqe/ai-daily-collector) | AI 资讯采集 + Windows 计划任务 |
+| 项目 | 类型 | 解决的问题 |
+|---|---|---|
+| [lbm-probe](https://github.com/gangrenboqe/lbm-probe) | 研究 | 圆柱绕流数值实验：Cd / St / Cl 对照权威基准（Schäfer–Turek 1996），最好档 Cd 均值误差 0.06%、St 误差 0.02%；唯一未解决的 Cl 偏差与完整排查过程同样写进 README |
+| [personal-ai](https://github.com/gangrenboqe/personal-ai) | 主项目 | 跑在自己电脑上的 AI 入口：对话与待办全部存在本地，模型供应商可替换 |
+| [three-body-trust-horizon](https://github.com/gangrenboqe/three-body-trust-horizon) | 研究 | 三体混沌轨道的可信时界测定：辛积分器 + 轨道系综，把"轨道跑到第几步就不能信了"从手工估计变成实测 |
+| [pdf-delivery-audit](https://github.com/gangrenboqe/pdf-delivery-audit) | 工具 | 交付前的 PDF 体检：页数、文字层可提取性、关键字段，不合格就拦住 |
+| [delivery-observability-tools](https://github.com/gangrenboqe/delivery-observability-tools) | 工具 | 出问题时先看清：调用观测、日志体检、Windows 机器巡检 |
+| [ai-capability-kit](https://github.com/gangrenboqe/ai-capability-kit) | 能力件 | AI 功能到底能不能用：工具调用、本地检索、提示词 A/B 评测 |
+| [ai-daily-collector](https://github.com/gangrenboqe/ai-daily-collector) | 能力件 | AI 资讯采集 + Windows 计划任务 |
 
-**共同点**：全部零第三方依赖，全部有自动化测试，全部跑在真实数据上。
+**五个工具 / 能力件**：全部零第三方依赖，全部有自动化测试，全部跑在真实数据上。
 README 里每一个数字都可以克隆下来自己复算。
+
+**两个研究项目**（lbm-probe / three-body-trust-horizon）：跑真实数值实验、对照权威基准；
+**测错的口径会被修正，修正过程写进 README** ——
+包括一条恒定偏差 7.6% 最后被查回 0.02% 的完整过程，和一个"已被自己的实验推翻"的旧口径。
 
 ## 我的方法是怎么一版版改出来的
 
@@ -78,10 +97,3 @@ README 里每一个数字都可以克隆下来自己复算。
 
 **AI 应用 / Agent（智能体）/ 大模型应用**方向的机会 —— 这是我现在的重点。
 次线是智能汽车 AI、AI 平台、AI Infra（推理基础设施）。
-
-有一点我想说明：我用的工具、方法、规矩都在持续更新，
-这个页面也会跟着更新 —— **想看我最近改了什么，点开任一项目的修改记录即可。**
-
-## 联系
-
-- 邮箱：xiyuzhu.work@gmail.com
