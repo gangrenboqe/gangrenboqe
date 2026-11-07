@@ -1,3 +1,33 @@
+<!-- English summary · added 2026-11-07 · full Chinese version preserved unchanged below -->
+
+# Hi, I'm Xie Yizhu
+
+> **AI writes the code. I define the problem, set the acceptance criteria, and decide whether the result is right.**
+> This is my main way of building things, not a footnote.
+
+**One rule behind everything here:** before anything is delivered, prove that a machine can read it and run it.
+
+## In 60 seconds
+
+| | |
+|---|---|
+| **How I work** | I define what "done" means, AI generates the implementation, and I independently verify the result — including finding where AI got it wrong. |
+| **What I care about** | Whether the result is *actually* right, not whether it looks right. |
+| **Evidence** | Every repository below carries real, reproducible numbers. Where something was not measured, I say so. |
+
+**One concrete example.** I built a fixed 25-question evaluation set for an AI app and reran it after every change. Correct answers went from **13/25 to 25/25**. When I added a rule saying "answers must be under 20 characters", it dropped to **18/25** — the evaluation caught it immediately and I removed the rule. That is the work I do: making "is it actually right?" something you can answer rather than guess.
+
+**Three rules I keep**
+1. Never present an inference as a measurement.
+2. The author never reviews their own work — a separate independent check reruns everything. Results are graded: passed / partially verified / cannot be independently verified. The last one is never guessed.
+3. A read-only inspection tool must never modify what it inspects.
+
+**Start here**: `personal-ai` (main project) · `lbm-probe` (can I judge whether a result is right?) · `pdf-delivery-audit` (where my delivery standard came from). All eight repositories are listed below.
+
+---
+
+<!-- 以下为完整中文版，一字未删 / Full Chinese version below, unchanged -->
+
 # 你好
 
 > **AI 编程是我的主要工作方式。** 下面这些项目的代码由 AI 生成 —— 这是我的主要交付方式，不是补充说明。
