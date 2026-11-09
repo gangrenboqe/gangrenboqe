@@ -101,7 +101,7 @@
 | [ai-capability-kit](https://github.com/gangrenboqe/ai-capability-kit) | 能力件 | AI 功能到底能不能用：工具调用、本地检索、提示词 A/B 评测 |
 | [ai-daily-collector](https://github.com/gangrenboqe/ai-daily-collector) | 能力件 | AI 资讯采集 + Windows 计划任务 |
 
-**五个工具 / 能力件**：全部零第三方依赖，全部有自动化测试，全部跑在真实数据上。
+**四个工具 / 能力件**：全部零第三方依赖，全部有自动化测试，全部跑在真实数据上。
 README 里每一个数字都可以克隆下来自己复算。
 
 **两个研究项目**（lbm-probe / three-body-trust-horizon）：跑真实数值实验、对照权威基准；
