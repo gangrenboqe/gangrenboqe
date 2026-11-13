@@ -24,6 +24,8 @@
 
 **Start here**: `personal-ai` (main project) · `lbm-probe` (can I judge whether a result is right?) · `pdf-delivery-audit` (where my delivery standard came from). All eight repositories are listed below.
 
+**License note (2026-11)**: from 2026-11-13 onward, these repositories are licensed under the [PolyForm Noncommercial License 1.0.0](https://polyformproject.org/licenses/noncommercial/1.0.0) — free to read, run and learn from, **not for commercial use**. Earlier versions were released under the MIT License.
+
 ---
 
 <!-- 以下为完整中文版，一字未删 / Full Chinese version below, unchanged -->
@@ -39,6 +41,8 @@
 
 最后更新：2026-10-28
 
+**许可证说明（2026-11）**：自 2026-11-13 起的版本改用 [PolyForm Noncommercial License 1.0.0](https://polyformproject.org/licenses/noncommercial/1.0.0) —— 可读、可跑、可学，**不得用于商业目的**；此前发布的版本为 MIT。
+
 ## 如果你只有 2 分钟
 
 时间紧，按这个顺序看：
@@ -48,7 +52,7 @@
    其中一处 7.6% 的恒定偏差**是测法错了，不是算错了** —— 我用实测把它查了回来，过程写进 README。
    **它证明的是：结果对不对，我能判。**
 2. **`personal-ai`** — 主项目。跑在自己电脑上的 AI 入口：对话与待办全部存在本地，
-   模型供应商可替换，单元测试 151 项、冒烟 32/32 全过（2026-11-09 实测）。
+   模型供应商可替换，32/32 测试全过。
 3. **`pdf-delivery-audit`** — 最小但最直接。我所有交付标准的起点（就是上面那条标准的来历）。
 
 其余四个按需看：一个是同类型的研究项目（`three-body-trust-horizon`），三个是工具 / 能力件。
@@ -101,7 +105,7 @@
 | [ai-capability-kit](https://github.com/gangrenboqe/ai-capability-kit) | 能力件 | AI 功能到底能不能用：工具调用、本地检索、提示词 A/B 评测 |
 | [ai-daily-collector](https://github.com/gangrenboqe/ai-daily-collector) | 能力件 | AI 资讯采集 + Windows 计划任务 |
 
-**四个工具 / 能力件**：全部零第三方依赖，全部有自动化测试，全部跑在真实数据上。
+**五个工具 / 能力件**：全部零第三方依赖，全部有自动化测试，全部跑在真实数据上。
 README 里每一个数字都可以克隆下来自己复算。
 
 **两个研究项目**（lbm-probe / three-body-trust-horizon）：跑真实数值实验、对照权威基准；
